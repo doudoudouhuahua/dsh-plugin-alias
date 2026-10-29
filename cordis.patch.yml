@@ -1,0 +1,5 @@
+# dsh-plugin-alias bundle patch: insert the host row into the profile's plugin
+# roster. The browser half rides the package's `dsh.client` manifest.
+- insert:
+    - id: dsh-plugin-alias
+      name: 'dsh-plugin-alias'

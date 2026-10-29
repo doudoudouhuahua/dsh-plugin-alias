@@ -1,0 +1,44 @@
+{
+  "name": "dsh-plugin-alias",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "为 DSH「插件」页的已安装插件设置别名：卡片标题显示「别名（原包名）」",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin-manager",
+    "alias"
+  ],
+  "author": "doudoudouhuahua",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doudoudouhuahua/dsh-plugin-alias.git"
+  },
+  "homepage": "https://github.com/doudoudouhuahua/dsh-plugin-alias#readme",
+  "bugs": {
+    "url": "https://github.com/doudoudouhuahua/dsh-plugin-alias/issues"
+  },
+  "license": "MIT"
+}
